@@ -1,0 +1,19 @@
+.countrySelectionContainer{
+  margin-top: 30px;
+  margin-bottom: 80px;
+  display:flex;
+  flex-direction:row;
+}
+.countryDiv{
+  font-size: 16px;
+}
+.countryDiv option{
+  width: 200px;
+}
+.countrySelectionContainer > span{
+  flex-grow:1; 
+}
+.countrySelectionContainer > .countryDiv{
+  flex-grow:0;
+  width:15%;
+}
