@@ -1,11 +1,40 @@
 .exchangeValueContainer{
-  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #000000;
 }
 .exchangeValueTextDiv{
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  }
+.exchangeRateValue{
+  font-size: 20px;
+}
+.exchangeValueLabel{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.amountValue{
+  font-size: 24px;
+  border-radius: 50px;
+  width: 215px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.amountLabel{
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.totalTextDiv{
   width: 230px;
   height: 49px;
   display: flex;
@@ -15,13 +44,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   }
-.exchangeRateValue{
-  font-style: normal;
-  font-weight: normal;
+.totalValue{
   font-size: 24px;
-  color: #000000;
 }
-.exchangeValueLabel{
+.totalLabel{
+  margin-top: 20px;
   text-align: center;
   margin-bottom: 10px;
 }
