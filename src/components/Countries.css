@@ -1,0 +1,16 @@
+.countriesContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #EEFFEF;
+}
+.countriesContainer > div{
+  width: 700px;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+}
+.labelSpan{
+  font-weight: bold;
+  text-align: left;
+}

@@ -30,4 +30,4 @@ This starter uses webpack-dev-server to spin up an Express server with Hot-Reloa
 - Click on the 'Convert' button to get the exchange rate as well as the converted total amount
 
 ### The Currency converter in action
-![Image description](public/img/snapshot.png)
+![Image description](img/snapshot.png)

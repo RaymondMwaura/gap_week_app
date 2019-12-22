@@ -1,33 +1,12 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
+const webpackMerge = require("webpack-merge");
 
-module.exports = {
-  entry: './src/index.js',
-  module: {
-    rules: [
-      {
-        test: /(\.s[ac]ss$|\.css$)/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        options: {
-          plugins: ['@babel/plugin-proposal-class-properties'],
-        },
-      },
-    ],
-  },
-  devServer: {
-    historyApiFallback: true,
-  },
-  resolve: {
-    extensions: ['.js', '.jsx', '.css'],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-      favicon: './public/img/favicon.ico',
-    }),
-  ],
-};
+const modeConfiguration = env => require(`./webpack/webpack.${env}`);
+const commonConfig = require("./webpack/webpack.common");
+
+module.exports = (
+  { mode } = {
+    mode: "development"
+  }
+) => webpackMerge(commonConfig, modeConfiguration(mode));
