@@ -2,8 +2,8 @@
 import React from 'react';
 import './Labels.css';
 
-const Labels = ({ dataAndMethods }) => {
-  const { updateExchangeRate, currenciesToUse } = dataAndMethods;
+const Labels = ({ props }) => {
+  const { updateExchangeRate, currenciesToUse } = props;
 
   return (
     <div className="firstLabelsDiv">

@@ -4,9 +4,9 @@
 import React from 'react';
 import './CountrySelection.css';
 
-const CountrySelection = ({ dataAndMethods }) => {
+const CountrySelection = ({ props }) => {
   let options;
-  const { supportedCountries, changeCurrency1, changeCurrency2 } = dataAndMethods;
+  const { supportedCountries, changeCurrency1, changeCurrency2 } = props;
 
   if (supportedCountries.length > 0) {
     options = supportedCountries[0].map((country) => (

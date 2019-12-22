@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/RaymondMwaura/gap_week_app.svg?branch=develop)](https://travis-ci.org/RaymondMwaura/gap_week_app)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7202fabf0297377106b1/maintainability)](https://codeclimate.com/github/RaymondMwaura/gap_week_app/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7202fabf0297377106b1/test_coverage)](https://codeclimate.com/github/RaymondMwaura/gap_week_app/test_coverage)
+
 # Currency Converter
 
 This App consumes the two APIs below to create a currency converter:

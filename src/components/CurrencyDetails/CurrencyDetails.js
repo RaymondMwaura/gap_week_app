@@ -1,17 +1,18 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './CurrencyDetails.css';
 
-const CurrencyDetails = ({ data }) => (
+const CurrencyDetails = ({ props }) => (
   <div className="currencyDetailsContainer">
     <div className="currencyDiv">
       <div className="currencyLabel">Currency</div>
-      <div className="currencyName">{data.currency1}</div>
+      <div className="currencyName">{props.currency1}</div>
     </div>
     <span />
     <div className="currencyDiv">
       <div className="currencyLabel">Currency</div>
-      <div className="currencyName">{data.currency2}</div>
+      <div className="currencyName">{props.currency2}</div>
     </div>
   </div>
 );
