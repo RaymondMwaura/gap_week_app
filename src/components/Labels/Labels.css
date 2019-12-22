@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 .convertBtn{
   font-size: 14px;
@@ -13,6 +13,13 @@
   border: 1px solid #5CB85C;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.convertBtn:hover{
+  background: #74df74;
+}
+.convertBtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 .firstLabelsDiv > span{
   flex-grow:1;

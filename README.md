@@ -18,3 +18,12 @@ npm start
 ```
 
 This starter uses webpack-dev-server to spin up an Express server with Hot-Reloading capability. Changes to code in `.src` will cause pages to reload.
+
+### Using the App
+
+- Select the two countries you want to do the computation on
+- Enter the amount of money based on the first currency (on the left) that you want to convert
+- Click on the 'Convert' button to get the exchange rate as well as the converted total amount
+
+### The Currency converter in action
+![Image description](public/img/snapshot.png)
