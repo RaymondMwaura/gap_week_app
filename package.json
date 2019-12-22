@@ -9,7 +9,28 @@
     "build": "webpack --mode=production",
     "dev": "webpack-dev-server --open --hot --mode development",
     "start": "npm run build && HTTPS=true serve -s ./dist",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporters",
+        {
+          "publicPath": "./html-report",
+          "filename": "report.html",
+          "expand": true
+        }
+      ]
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "json",
+      "text",
+      "html"
+    ]
   },
   "devDependencies": {
     "eslint": "^6.7.2",
@@ -18,7 +39,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "jest-html-reporters": "^1.2.0"
   },
   "dependencies": {
     "@babel/cli": "^7.6.4",
