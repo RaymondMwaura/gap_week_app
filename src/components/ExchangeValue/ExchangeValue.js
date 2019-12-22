@@ -4,10 +4,10 @@ import React from 'react';
 import './ExchangeValue.css';
 import CurrencyLoader from '../Loader/CurrencyLoader';
 
-const ExchangeValue = ({ data }) => {
+const ExchangeValue = ({ props }) => {
   const {
     currentExchangeRate, amount, total, changeAmount, fetchingState,
-  } = data;
+  } = props;
   if (fetchingState.isFetchingExchangeRate === true) {
     return (
       <CurrencyLoader />

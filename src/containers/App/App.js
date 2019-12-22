@@ -59,7 +59,7 @@ class App extends Component {
       <div className="App">
         <h3 className="currencyConvertTitle">Currency Conversion</h3>
         <div>
-          <Labels dataAndMethods={{
+          <Labels props={{
             updateExchangeRate: this.props.updateExchangeRate,
             currenciesToUse: [
               this.props.currencies.currentCurrency1,
@@ -67,18 +67,18 @@ class App extends Component {
             ],
           }}
           />
-          <CountrySelection dataAndMethods={{
+          <CountrySelection props={{
             supportedCountries: this.props.countries.supportedCountries,
             changeCurrency1: this.props.changeCurrency1,
             changeCurrency2: this.props.changeCurrency2,
           }}
           />
-          <CurrencyDetails data={{
+          <CurrencyDetails props={{
             currency1: this.props.currencies.currentCurrency1,
             currency2: this.props.currencies.currentCurrency2,
           }}
           />
-          <ExchangeValue data={{
+          <ExchangeValue props={{
             currentExchangeRate: this.props.currencies.currentExchangeRate,
             amount: this.props.currencies.amount,
             total: this.props.currencies.total,
