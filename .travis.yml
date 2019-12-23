@@ -1,3 +1,7 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=cbdd9ab76e5d36bb5563d9ff09fb38f90f7481d5ed29f7dfb6ff0c94b70a106e
+
 language: node_js
 
 node_js:
@@ -19,4 +23,4 @@ script:
   - npm test
 
 after_success:
-  - ./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
